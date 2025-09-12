@@ -13,7 +13,7 @@ header {
   box-sizing: border-box;
   margin: 0 auto;
   width: 100%;
-  overflow: hidden; 
+  overflow: hidden;
 }
 
 /* ============= */
@@ -35,29 +35,33 @@ header {
   margin-left: 0.5rem;
 }
 
-.logo {
-  height: 85px;
-  width: auto;
-  transition: transform 0.3s ease;
-  z-index: 4; /* Asegura que el logo esté por encima del subrayado */
+/* Subrayado naranja para el texto vector */
+.text-vector-container::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0px; /* Ajusta la posición vertical del subrayado */
+  width: 90%;
+  height: 3px; /* Grosor del subrayado */
+  background-color: var(--color-orange-primary); /* Color naranja primario (ajusta según tu paleta) */
+  z-index: 1;
 }
 
 .text-vector {
-  height: 30px;
+  height: 35px;
   width: auto;
   position: relative;
-  z-index: 2; /* Asegura que el logo esté por encima del subrayado */
+  z-index: 2; /* Asegura que la imagen esté sobre el subrayado */
 }
 
-.full-width-underline {
-  position: absolute;
-  bottom: -0.1rem; /* Ajusta según sea necesario */
-  left: -1.2rem;
-  width: 100vw; /* Ocupa todo el ancho de la ventana */
-  height: 2px;
-  background-color: var(--color-orange-primary);
-  z-index: 1;
+.logo {
+  height: 60px;
+  width: auto;
+  transition: transform 0.3s ease;
+  padding: 1rem 0;
+  z-index: 4; /* Asegura que el logo esté por encima del subrayado */
 }
+
 
 /* ============= */
 /* NAVEGACIÓN PRINCIPAL */

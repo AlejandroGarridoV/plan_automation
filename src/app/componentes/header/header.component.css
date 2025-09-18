@@ -13,7 +13,7 @@ header {
   box-sizing: border-box;
   margin: 0 auto;
   width: 100%;
-  overflow: hidden; 
+  overflow: hidden;
 }
 
 /* ============= */
@@ -37,7 +37,6 @@ header {
 
 .logo {
   height: 75px;
-  padding: 0.5rem 0;
   width: auto;
   transition: transform 0.3s ease;
   z-index: 4; /* Asegura que el logo esté por encima del subrayado */
@@ -47,7 +46,7 @@ header {
   height: 35px;
   width: auto;
   position: relative;
-  z-index: 2; /* Asegura que el logo esté por encima del subrayado */
+  z-index: 2; /* Asegura que la imagen esté sobre el subrayado */
 }
 
 /* ============= */

@@ -38,6 +38,7 @@ header {
 .logo {
   height: 75px;
   width: auto;
+  padding: 0.5rem 0;
   transition: transform 0.3s ease;
   z-index: 4; /* Asegura que el logo esté por encima del subrayado */
 }
